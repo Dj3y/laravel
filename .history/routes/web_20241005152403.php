@@ -28,5 +28,5 @@ Route::put('/edit/{post:id}',function($id){
 
 });
 // Delete a specific restaurant
-Route::delete('/{post:id}',function($id){  
+Route::delete('/restaurants/{post:id}',function($id){  
 });

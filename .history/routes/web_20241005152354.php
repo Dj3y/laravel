@@ -17,16 +17,16 @@ Route::get('/{post:id}',  [RestaurantController::class, 'show']);
 Route::get('/create',[RestaurantController::class, 'create' ]);
 
 // Post/public the restaurant
-Route::post('/create',function(){
+Route::post('/restaurants/create',function(){
 });
 
 // Show the form of an restaurant
-Route::get('/edit/{post:id}',[RestaurantController::class, 'edit/$id']);
+Route::get('/restaurants/edit/{post:id}',[RestaurantController::class, 'edit/$id']);
 
 // Update this specific restaurant
-Route::put('/edit/{post:id}',function($id){
+Route::put('/restaurants/edit/{post:id}',function($id){
 
 });
 // Delete a specific restaurant
-Route::delete('/{post:id}',function($id){  
+Route::delete('/restaurants/{post:id}',function($id){  
 });
